@@ -1,0 +1,28 @@
+# git ls-files
+# git ls-files --others -i --exclude-standard
+
+# Ignore Everything
+*
+
+# Git
+!.gitignore
+
+# Make
+!/Makefile
+
+# Rebar
+!/rebar.config
+
+# Submodules (see subs/.gitignore)
+!/subs/
+	
+# Applications
+!/src/
+!/src/*.app.src
+!/src/*.erl
+!/src/*.hrl
+
+# Documentation
+!/INSTALL*
+!/README*
+!/TODO*
