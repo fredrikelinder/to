@@ -7,7 +7,8 @@ THIS_MAKEFILE		= $(abspath $(lastword $(MAKEFILE_LIST)))
 THIS_DIR		= $(dir $(THIS_MAKEFILE))
 INIT_GIT_SUBMODULES	= $(shell git submodule update --init)
 
-REBAR_DIR		= $(THIS_DIR)subs/rebar/
+SUBS_DIR		= $(THIS_DIR)subs/
+REBAR_DIR		= $(SUBS_DIR)rebar/
 
 REBAR			= $(REBAR_DIR)rebar
 
